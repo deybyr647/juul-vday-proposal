@@ -9,36 +9,49 @@ const Home = () => {
   return (
     <section className={"section"}>
       <h1 className={`title is-1 has-text-centered ${styles.title}`}>
-        You’ve got my heart doing backflips—will you catch it and be my
-        Valentine?
+        Julianne...
       </h1>
+
+      <p
+        className={`has-text-centered is-size-3 is-size-5-mobile ${styles.title}`}
+      >
+        Roses may fade, but my feelings for you never will—be my Valentine?
+      </p>
 
       <div className={"columns"}>
         <div
           className={
-            "column is-flex is-justify-content-center is-hidden-mobile"
+            "column is-flex is-justify-content-center is-align-items-center paddingless is-hidden-mobile"
           }
         >
           <Rose />
         </div>
 
-        <div className={"column"}>
+        <div className={"column paddingless"}>
           <div className={`image ${styles.mainImage}`}>
             <Image
               src={juulSmileGif}
               alt={"Juul Smiling Gif"}
-              className={styles.mainImage}
+              className={`${styles.mainImage}`}
             />
           </div>
         </div>
 
-        <div className={"column is-flex is-justify-content-center"}>
+        <div
+          className={
+            "column is-flex is-justify-content-center is-align-items-center paddingless"
+          }
+        >
           <Rose />
         </div>
       </div>
 
       <div className={"columns"}>
-        <div className={"column is-flex is-justify-content-space-evenly"}>
+        <div
+          className={
+            "column is-flex is-justify-content-space-evenly paddingless"
+          }
+        >
           <Link href={"/yay"} className={"button is-primary"}>
             Yes
           </Link>

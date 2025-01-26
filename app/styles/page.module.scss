@@ -10,12 +10,14 @@ $tropical-indigo: #8e7dbe;
 
 .mainImage img {
   border-radius: 20%;
+  max-width: 85%;
+  margin: 30px auto;
 }
 
 @media screen and (max-width: 769px) {
   .mainImage img {
     width: 150px;
     height: auto;
-    margin: 0 auto;
+    margin: 30px auto 25px;
   }
 }
