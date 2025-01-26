@@ -1,0 +1,21 @@
+$puce: #d88c9a;
+$light-orange: #f2d0a9;
+$almond: #f1e3d3;
+$cambridge-blue: #99c1b9;
+$tropical-indigo: #8e7dbe;
+
+.title {
+  color: $almond;
+}
+
+.mainImage img {
+  border-radius: 20%;
+}
+
+@media screen and (max-width: 769px) {
+  .mainImage img {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+  }
+}

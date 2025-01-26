@@ -1,0 +1,15 @@
+$puce: #d88c9a;
+$light-orange: #f2d0a9;
+$almond: #f1e3d3;
+$cambridge-blue: #99c1b9;
+$tropical-indigo: #8e7dbe;
+
+$custom-colors: (
+  "puce": $puce,
+  "light-orange": $light-orange,
+  "almond": $almond,
+  "cambridge-blue": $cambridge-blue,
+  "tropical-indigo": $tropical-indigo,
+);
+
+@use "bulma/bulma";
