@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./styles/page.module.scss";
+import styles from "./page.module.scss";
 
 import juulSmileGif from "../public/images/juul_smile.gif";
 import Rose from "./components/Rose";
@@ -13,7 +13,7 @@ const Home = () => {
       </h1>
 
       <p
-        className={`has-text-centered is-size-3 is-size-5-mobile ${styles.title}`}
+        className={`has-text-centered is-size-3 is-size-5-mobile ${styles.subtitle}`}
       >
         Roses may fade, but my feelings for you never will—be my Valentine?
       </p>
@@ -32,6 +32,7 @@ const Home = () => {
             <Image
               src={juulSmileGif}
               alt={"Juul Smiling Gif"}
+              priority={true}
               className={`${styles.mainImage}`}
             />
           </div>
@@ -48,15 +49,13 @@ const Home = () => {
 
       <div className={"columns"}>
         <div
-          className={
-            "column is-flex is-justify-content-space-evenly paddingless"
-          }
+          className={`column is-flex is-justify-content-space-evenly paddingless ${styles["button-container"]}`}
         >
-          <Link href={"/yay"} className={"button is-primary"}>
+          <Link href={"/yeah"} className={"button is-primary"}>
             Yes
           </Link>
 
-          <Link href={"/wrongChoice"} className={"button is-danger"}>
+          <Link href={"/nah"} className={"button is-danger"}>
             No
           </Link>
         </div>

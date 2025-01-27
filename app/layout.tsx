@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Juul V-Day",
     images: [
       {
-        url: "https://juul-vday.deybyr647.com/pirate-juul.png",
+        url: "https://juul-vday.deybyr647.com/images/juul_pirate.png",
         width: 800,
         height: 600,
       },
