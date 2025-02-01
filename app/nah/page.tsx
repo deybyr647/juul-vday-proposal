@@ -37,6 +37,7 @@ const NoPage = () => {
               src={juulWth}
               alt={"Juul Smiling Gif"}
               className={`is-hidden-mobile`}
+              placeholder={"blur"}
             />
           </div>
         </div>
@@ -47,6 +48,7 @@ const NoPage = () => {
               src={jessieStaring}
               alt={"Jessie Staring"}
               className={`is-hidden-mobile`}
+              placeholder={"blur"}
             />
           </div>
         </div>

@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction, useEffect, useReducer } from "react";
 import Image, { StaticImageData } from "next/image";
 
 import roseIcon from "../../../public/images/rose.png";
+import styles from "./ImageForm.module.scss";
 
 interface Activity {
   id: string;
@@ -55,37 +56,33 @@ const ImageForm = ({ activityList, rootStateDispatch }: ImageFormProps) => {
         <div key={item.id} className={"column"}>
           <div
             onClick={() => dispatch({ type: "select", id: item.id })}
-            className={(item.checked ? "selected" : "unselected") + " card"}
-            style={{
-              padding: "10px",
-              margin: "5px",
-              cursor: "pointer",
-              border: item.checked ? "2px solid blue" : "1px solid gray",
-              backgroundColor: item.checked ? "#e0f7fa" : "#fff",
-              borderRadius: "5px",
-            }}
+            className={`${item.checked ? styles.selected : styles.unselected} ${styles.card} card`}
           >
             <div className={"card-image"}>
               <figure className={"image is-4by3"}>
                 {/*@ts-expect-error types issue*/}
-                <Image src={item.image} alt={item.name} />
+                <Image src={item.image} alt={item.name} placeholder={"blur"} />
               </figure>
             </div>
             <div className={"card-content"}>
               <div className={"media"}>
                 <div className={"media-left"}>
                   <figure className={"image is-48x48"}>
-                    <Image src={roseIcon} alt={"Rose Icon"} />
+                    <Image
+                      src={roseIcon}
+                      alt={"Rose Icon"}
+                      placeholder={"blur"}
+                    />
                   </figure>
                 </div>
                 <div className={"media-content"}>
-                  <p className={"title is-4"}>{item.name}</p>
+                  <p className={"title is-4 has-text-grey-dark"}>{item.name}</p>
                   <p className={"subtitle is-6"}>@{item.location}</p>
                 </div>
               </div>
 
               <div className={"content"}>
-                {item.description}
+                <p className={"has-text-grey"}>{item.description}</p>
                 <br />
                 <time dateTime={"2025-02-14"}>01:43 PM - 14 Feb 2025</time>
               </div>

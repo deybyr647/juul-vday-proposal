@@ -11,6 +11,7 @@ const YesPage = () => {
       <h1 className={"title is-1 has-text-centered"}>
         Yayyy! Now... How would you like to spend it?
       </h1>
+
       <ImageFormContainer />
     </section>
   );
