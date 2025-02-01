@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   creator: "Deyby Rodriguez",
   publisher: "Deyby Rodriguez",
   openGraph: {
-    title: "Juul's V-Day Proposal",
+    title: "V-Day Proposal for my Juul",
     url: "https://juul-vday.deybyr647.com",
     siteName: "Juul V-Day",
     images: [
