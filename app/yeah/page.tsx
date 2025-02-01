@@ -8,10 +8,9 @@ import ImageFormContainer from "../components/ImageForm/ImageFormContainer";
 const YesPage = () => {
   return (
     <section className={"section"}>
-      <h1 className={"title is-1"}>Hello Yes Page</h1>
-
-      <h1>Image Form</h1>
-
+      <h1 className={"title is-1 has-text-centered"}>
+        Yayyy! Now... How would you like to spend it?
+      </h1>
       <ImageFormContainer />
     </section>
   );
