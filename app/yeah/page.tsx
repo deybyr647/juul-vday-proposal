@@ -1,8 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./styles/Home.module.scss";
-
-import juulSmileGif from "../public/images/juul_smile.gif";
 import ImageFormContainer from "../components/ImageForm/ImageFormContainer";
 
 const YesPage = () => {

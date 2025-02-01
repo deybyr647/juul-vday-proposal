@@ -10,7 +10,6 @@ const font = Courgette({
 
 export const metadata: Metadata = {
   title: "Dear Julianne,",
-  name: "A surprise awaits inside...",
   referrer: "origin-when-cross-origin",
   keywords: [
     "Julianne",
@@ -26,7 +25,6 @@ export const metadata: Metadata = {
   publisher: "Deyby Rodriguez",
   openGraph: {
     title: "Juul's V-Day Proposal",
-    name: "V-Day proposal to my love",
     url: "https://juul-vday.deybyr647.com",
     siteName: "Juul V-Day",
     images: [
