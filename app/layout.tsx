@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Courgette } from "next/font/google";
 import "./styles/globals.scss";
 
@@ -54,6 +55,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <html lang="en">
       <body className={`${font.className} container`}>{children}</body>
+      <Analytics />
     </html>
   );
 };
